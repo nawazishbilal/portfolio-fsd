@@ -539,6 +539,69 @@ section {
   font-weight: 300;
 }
 
+/* Achievements */
+.achievement-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.achievement-item {
+  background: var(--bg);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  transition: background 0.2s;
+}
+
+.achievement-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .achievement-list {
+    flex-direction: column;
+  }
+}
+
+.achievement-item:hover {
+  background: var(--surface);
+}
+
+.achievement-icon {
+  font-size: 0.45rem;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.achievement-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.achievement-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.achievement-text {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
 /* CONTACT */
 .contact-inner {
   display: grid;
