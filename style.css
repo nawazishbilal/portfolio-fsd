@@ -167,6 +167,53 @@ section {
   animation: fadeUp 0.7s 0.55s forwards;
 }
 
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-wrap {
+  width: 260px;
+  height: 320px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+
+  .hero-image-wrap {
+    width: 140px;
+    height: 170px;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 12px 28px;
