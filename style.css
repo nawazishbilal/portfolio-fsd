@@ -135,18 +135,23 @@ section {
   display: flex;
   gap: 36px;
   margin-top: 36px;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.5s forwards;
 }
+
 .hero-stat {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
+
 .stat-value {
   font-family: var(--serif);
   font-size: 1.8rem;
   letter-spacing: -0.03em;
   line-height: 1;
 }
+
 .stat-label {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
@@ -257,6 +262,112 @@ section {
 .fact-value {
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+/* Education */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.education-item {
+  background: var(--bg);
+  padding: 28px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.education-item:hover {
+  background: var(--surface);
+}
+
+.edu-status {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.edu-status.ongoing {
+  background: #e8f4ec;
+  color: #2d7a47;
+}
+
+.edu-status.completed {
+  background: var(--tag-bg);
+  color: var(--muted);
+}
+
+.edu-main-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.edu-institution {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.edu-degree {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.edu-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edu-place {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.edu-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.edu-dot {
+  color: var(--line);
+}
+
+@media (max-width: 768px) {
+  .education-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .edu-right {
+    text-align: left;
+  }
+
+  .edu-meta {
+    justify-content: flex-start;
+  }
 }
 
 /* SKILLS */
