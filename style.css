@@ -131,6 +131,29 @@ section {
   animation: fadeUp 0.7s 0.4s forwards;
 }
 
+.hero-stats {
+  display: flex;
+  gap: 36px;
+  margin-top: 36px;
+}
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stat-value {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .hero-cta {
   margin-top: 48px;
   display: flex;
