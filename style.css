@@ -200,6 +200,8 @@ section {
   object-fit: cover;
   object-position: center top;
   display: block;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.5s forwards;
 }
 
 @media (max-width: 768px) {
